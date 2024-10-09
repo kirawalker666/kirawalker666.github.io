@@ -1,0 +1,313 @@
+*{
+	margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    background-color: #000000;
+    text-decoration: none;
+}
+
+.logo {
+    padding: 20px 150px 20px 150px;
+}
+
+.box-1 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-one a:link {
+    color: #B0001F;
+}
+
+.btn-one a:hover {
+    color: #B0001F;
+}
+
+.btn-one a:visited {
+    color: #B0001F;
+}
+
+.btn-one {
+    line-height: 50px;
+    height: 60px;
+    width: 110px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+}
+
+.btn-one a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-one a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-one a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-one {
+    color: #B0001F;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.btn-one span {
+    transition: all 0.3s;
+}
+
+.btn-one::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    transform: scale(0.1, 1);
+}
+
+.btn-one:hover span {
+    letter-spacing: 2px;
+}
+
+.btn-one:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.btn-one:hover::after {
+    opacity: 0;
+    transform: scale(0.1, 1);
+}
+
+.btn-1 {
+    border-radius: 30px;
+}
+
+div [class*=box-1] {
+    height: 33.33%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
+    padding-left: 150px;
+    padding-right: 150px;
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+.social a {
+    padding-left: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.bl0 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 5% 0 0 0;
+}
+
+.bl1 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 5% 0 0 0;
+
+    h1 {
+        padding-top: 100px;
+        font-family: "Unbounded";
+        font-weight: 500;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    p {
+        font-family: "Montserrat";
+        padding-bottom: 50px;
+        padding-top: 25px;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.bl2 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 170px;
+}
+
+.text-1 {
+    h1 {
+        padding-top: 50px;
+        font-family: "Unbounded";
+        font-weight: 100;
+        font-size: 45px;
+        padding-bottom: 15px;
+    }
+
+    p {
+        font-family: "Montserrat";
+        padding-bottom: 60px;
+        font-size: 19px;
+    }
+}
+
+.line {
+
+    p{
+        font-family: "Unbounded";
+        font-weight: 800;
+        padding-left: 12%;
+    }
+}
+
+.line-2 {
+    p {
+        font-family: "Unbounded";
+        font-weight: 800;
+        padding-left: 46%;
+    }
+}
+
+.text {
+    h1 {
+        padding-top: 100px;
+        font-family: "Unbounded";
+        font-weight: 500;
+        font-size: 50px;
+    }
+
+    p {
+        font-family: "Montserrat";
+        padding-bottom: 50px;
+        padding-top: 25px;
+        font-size: 20px;
+    }
+}
+
+.pictures {
+    padding-left: 15%;
+}
+
+.bl3 {
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0 0 0;
+
+    p {
+        font-family: "Montserrat";
+        padding-bottom: 50px;
+        font-size: 19px;
+        padding-left: 15%;
+    }
+}
+
+.text-2 {
+    h1 {
+        padding-top: 100px;
+        font-family: "Unbounded";
+        font-weight: 500;
+        font-size: 50px;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+}
+
+.text-4 {
+        h1 {
+            padding: 50px 0 20px 0;
+            font-family: "Unbounded";
+            font-weight: 300;
+            font-size: 35px;
+            padding-left: 15%;
+            padding-top: 10px;
+        }
+
+        p {
+            font-family: "Montserrat";
+            padding-bottom: 50px;
+            padding-left: 15%;
+            font-size: 19px;
+        }
+}
+
+.line-3 {
+    p{
+        font-family: "Unbounded";
+        font-weight: 800;
+        padding-left: 80%;
+        padding-bottom: 180px;
+        padding-top: 50px;
+    }
+}
+
+.bl4 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 40px;
+    padding: 5% 0 0 0;
+}
+
+.pictures-1 {
+    padding-left: 50px;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    text-decoration: none;
+    color: #ffffff;
+
+    p {
+        font-family: 'Unbounded';
+        font-size: 25px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        font-weight: 500;
+        }
+}
+

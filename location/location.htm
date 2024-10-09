@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../location/location.css">
+    <title>キツネ</title>
+</head>
+<body>
+    <body>
+        <div class="header">
+            <div class="logo">
+                <p>
+                    <img src="../img/kitsyne.png" a href="../index/index.htm" alt="キツネ" width="90">
+                </p>
+            </div>
+    
+            <div class="box-1" onclick="window.location.replace(`/index/index.htm`)">
+                <div class="btn-one">
+                    <p><a href="/index/index.htm">Главная</a></p>
+                </div>
+            </div>
+    
+            <div class="box-1" onclick="window.location.replace(`/about/about.htm`)">
+                <div class="btn-one">
+                    <p><a href="/about/about.htm">О нас</a></p>
+                </div>
+            </div>
+    
+            <div class="box-1" onclick="window.location.replace(`/location/location.htm`)">
+                <div class="btn-one">
+                    <p><a href="/location/location.htm">Локация</a></p>
+                </div>
+            </div>
+    
+            <div class="social">
+                <a href="https://www.youtube.com/channel/UCwlCIpVwQ5Zbl884aqdfMNg"><img src="../img/youtube_1384028 1.png" alt="YouTube" width="35"></a>
+                <a href="https://vk.com/kira___walker" target="_blank"><img src="../img/vk (1).png" alt="VK" width="35"></a>
+                <a href="https://web.telegram.org/karamelizirovanniy_korn/" target="_blank"><img src="../img/tg.png" alt="Telegram" width="35"></a>
+                <a href="https://www.instagram.com/karina___walker" target="_blank"><img src="../img/instagram_1384031 1.png" alt="Instagram" width="35"></a>
+            </div>
+        </div>
+
+        <div class="text">
+            <h1>Вы можете найти нас здесь:</h1>
+            <p>г. Калининград, ул. Нарвская 68, подъезд 6, кв. 6</p>
+        </div>
+
+        <main>
+			<div id="map"></div>
+		</main>
+
+        <script src="../js/script.js"></script>
+        <script> 
+            function initMap() {
+                var uluru = {lat: 54.736623, lng: 20.498010};
+                var map = new google.maps.Map(document.getElementById('map'), { 
+                zoom: 15.5,
+                center: uluru
+                });
+                var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+                });
+            }
+        </script>
+
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNklHwA9_CM046GEFDsclINaUeGBvfugc&callback=initMap">
+        </script>
+        <script src="../js/script.js"></script>
+
+        <div id="footer">
+            <div class="logo">
+                <p>
+                    <img src="../img/kitsyne.png" alt="キツネ" width="90">
+                </p>
+            </div>
+    
+            <p>
+              &copy; 2024, キツネ"
+            </p>
+    
+            <div class="social">
+                <a href="https://www.youtube.com/channel/UCwlCIpVwQ5Zbl884aqdfMNg"><img src="../img/youtube_1384028 1.png" alt="YouTube" width="35"></a>
+                <a href="https://vk.com/kira___walker" target="_blank"><img src="../img/vk (1).png" alt="VK" width="35"></a>
+                <a href="https://web.telegram.org/karamelizirovanniy_korn/" target="_blank"><img src="../img/tg.png" alt="Telegram" width="35"></a>
+                <a href="https://www.instagram.com/karina___walker" target="_blank"><img src="../img/instagram_1384031 1.png" alt="Instagram" width="35"></a>
+            </div>
+        </div>
+</body>
+</html>
